@@ -41,7 +41,9 @@
 #define STATE_HDR_OFF "state=3"
 
 #define MAX_LENGTH         50
+#ifndef BOOST_SOCKET
 #define BOOST_SOCKET       "/dev/socket/pb"
+#endif
 
 #define UEVENT_MSG_LEN 2048
 #define TOTAL_CPUS 4
