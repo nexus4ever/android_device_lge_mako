@@ -31,6 +31,8 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
+TOUCH_BOOST_DEBUG := false
+
 # Inline kernel building
 TARGET_KERNEL_CONFIG := mako_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/mako
