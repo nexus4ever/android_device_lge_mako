@@ -211,6 +211,10 @@ PRODUCT_PACKAGES += \
 	libc2dcolorconvert
 endif
 
+# Force Legacy Camera API
+PRODUCT_PROPERTY_OVERRIDES += \
+        camera2.portability.force_api=1
+
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/mako/gps.conf:system/etc/gps.conf
