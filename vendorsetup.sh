@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_mako-userdebug
+add_lunch_combo nexus_mako-userdebug
+
