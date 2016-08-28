@@ -123,6 +123,9 @@ HAVE_ADRENO_SOURCE:= false
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+# Camera
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
