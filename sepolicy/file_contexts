@@ -128,3 +128,6 @@
 # Sysfs files used by mpdecision
 /sys/module/pm2/modes(/.*)?            u:object_r:sysfs_mpdecision:s0
 /sys/module/pm_8x60/modes(/.*)?        u:object_r:sysfs_mpdecision:s0
+
+# it seems opengl library needs to read gpuclk sysfs file
+/sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/gpuclk u:object_r:sysfs_gpuclk:s0
