@@ -274,6 +274,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp,adb
 
+# Enable Google Assistant
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.opa.eligible_device=true
+
 # Snap Camera
 PRODUCT_PACKAGES += \
     SnapdragonCamera
