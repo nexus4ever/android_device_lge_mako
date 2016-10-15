@@ -404,11 +404,11 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "smartmax"
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "smartmax"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "smartmax"
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "smartmax"
-    restorecon_recursive /sys/devices/system/cpu/cpufreq/smartmax
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "interactive"
+    restorecon_recursive /sys/devices/system/cpu/cpufreq/interactive
 
 on property:init.svc.zygote=running
     setprop sys.boot_completed 0
