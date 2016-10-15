@@ -122,6 +122,8 @@ HAVE_ADRENO_SOURCE:= false
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+TARGET_USES_MEDIA_EXTENSIONS := true
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
