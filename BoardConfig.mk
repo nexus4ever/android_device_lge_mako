@@ -125,6 +125,7 @@ USE_MINIKIN := true
 
 # Camera
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
