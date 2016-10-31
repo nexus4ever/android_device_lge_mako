@@ -32,14 +32,15 @@ KRAIT_TUNINGS := true
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677 user_debug=31
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677 user_debug=31 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 TOUCH_BOOST_DEBUG := false
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := mako_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/mako
+export LOCALVERSION=-permissive
+TARGET_KERNEL_CONFIG := hellspawn_mako_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hellspawn-N4
 TARGET_KERNEL_TOOLCHAIN := UBERTC-5.4.1
 TARGET_GCC_VERSION_ARM := 5.4.1
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
