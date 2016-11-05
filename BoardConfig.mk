@@ -136,3 +136,9 @@ EXTENDED_FONT_FOOTPRINT := true
 MALLOC_SVELTE := true
 
 -include vendor/lge/mako/BoardConfigVendor.mk
+
+# Skip API checks.
+WITHOUT_CHECK_API := true
+
+# Don't try to build and run all tests by default.
+ANDROID_NO_TEST_CHECK := true
