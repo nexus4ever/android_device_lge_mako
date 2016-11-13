@@ -216,6 +216,11 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
         camera2.portability.force_api=1
 
+# Legacy Camera HAL1
+PRODUCT_PROPERTY_OVERRIDES += \
+        media.stagefright.legacyencoder=true \
+        media.stagefright.less-secure=true
+
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/mako/gps.conf:system/etc/gps.conf
