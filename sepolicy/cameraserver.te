@@ -1,3 +1,6 @@
+unix_socket_send(cameraserver, camera, camera);
+unix_socket_send(cameraserver, mpdecision, mpdecision);
+
 # Interact with sockets
 allow cameraserver camera:unix_dgram_socket sendto;
 allow cameraserver camera_data_file:sock_file write;
@@ -5,6 +8,9 @@ allow cameraserver camera_socket:sock_file { open read write ioctl };
 allow cameraserver property_socket:sock_file { open read write ioctl };
 allow cameraserver init:unix_stream_socket connectto;
 
+allow cameraserver sysfs:file r_file_perms;
+
+# for libmmjpeg
 allow cameraserver system_file:file execmod;
 allow cameraserver camera_device:chr_file { open read write ioctl };
 allow cameraserver cameraserver:fd use;
