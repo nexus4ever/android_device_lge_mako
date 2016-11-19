@@ -212,10 +212,6 @@ PRODUCT_PACKAGES += \
 	libc2dcolorconvert
 endif
 
-# Force Legacy Camera API
-PRODUCT_PROPERTY_OVERRIDES += \
-        camera2.portability.force_api=1
-
 # Legacy Camera HAL1
 PRODUCT_PROPERTY_OVERRIDES += \
         media.stagefright.legacyencoder=true \
