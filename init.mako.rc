@@ -432,3 +432,7 @@ on property:init.svc.zygote=running
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "performance"
 
     # <-- NeXus4ever Tweaks [2/2] END -->
+
+# Restart media in case it starts before qcamerasvr
+on property:init.svc.qcamerasvr=running
+    restart media
