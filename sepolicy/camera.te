@@ -1,6 +1,3 @@
-#N changes
-type camera, domain, domain_deprecated;
-
 # Qualcomm MSM camera
 type camera, domain, domain_deprecated;
 type camera_exec, exec_type, file_type;
