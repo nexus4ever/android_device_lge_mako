@@ -61,6 +61,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/mako/bluetooth
 # Use clang
 USE_CLANG_PLATFORM_BUILD := true
 
+TARGET_NEEDS_GCC_LIBC := true
 # FIXME: HOSTAPD-derived wifi driver
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn
