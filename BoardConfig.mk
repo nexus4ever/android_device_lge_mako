@@ -36,10 +36,10 @@ TOUCH_BOOST_DEBUG := false
 # Inline kernel building
 TARGET_KERNEL_CONFIG := mako_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/mako
-TARGET_KERNEL_TOOLCHAIN := UBERTC-5.4.1
-TARGET_GCC_VERSION_ARM := 5.4.1
+TARGET_KERNEL_TOOLCHAIN := UBERTC-6.x
+TARGET_GCC_VERSION_ARM := 6.x
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := /home/spezi77/android/uber-tc/arm-eabi-5.x/bin
+KERNEL_TOOLCHAIN := /home/spezi77/android/uber-tc/arm-eabi-6.x/bin
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
